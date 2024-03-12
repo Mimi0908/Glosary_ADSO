@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+h1{
+    font-size: 50px;
+    font-family: 'Protest Riot';
+}
+header{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    background-color: white;
+    padding: 20px 15px;
+    box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.2);
+}
+#logo{
+    font-family: 'Protest Riot';
+    font-size: 42px;
+    padding-left: 50px;
+    width: 70%;
+}
+#navegador{
+    width: 30%;
+}
+#navegador ul {
+    padding: 10px;
+    display: flex;
+}
+#sitio{
+    margin: 0 20px;
+    list-style: none;
+}
+#sitio a{
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+/*banner*/
+.banner{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 50px;
+    top: 60px;
+}
+.texto{
+    padding: 60px;
+    position: relative;
+    z-index: 1;
+    top: 100px;
+    text-align: center;
+    width: 850px;
+    height:600px;
+}
+.texto h2{
+    font-size: 60px;
+    line-height: 80px;
+}
+.texto p{
+    font-size: 18px;
+    line-height: 32px;
+    color: #18191F;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+.banner img {
+    width: 900px;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    left: 75%;
+}
+
+/*glosary*/
+#informacion{
+    padding: 4% 15%;
+    background: rgb(171, 226, 228);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 80px;
+    color: white;
+    text-align: center;
+}
+#informacion h2{
+    margin: 10px 0px 30px;
+}
+#fonetica{
+    font-size: 18px;
+    color: rgb(106, 106, 159);
+    display: none;
+}
+#fonertica-active{
+    display: block;
+}
+#informacion p{
+    margin: 10px 0px 30px;
+    line-height: 30px;
+    font-size: 20px;
+}
+#actividades{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+}
+#actividades button{
+    margin: 0px 20px;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 35px;
+    background-color: #ED9B40;
+    cursor: pointer;
+}
+#actividades button i{
+    font-size: 25px;
+    color: white;
+}
+#actividades button:hover{
+    transition: all 0.5s ease-in-out;
+    background-color: rgb(251, 193, 87)
+}
+#comienzo_Slider{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#comienzo_Slider button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+#comienzo_Slider button i{
+    font-size: 50px;
+    color: white;
+}.title{
+    font-size: 35px;
+    margin-top: 30px;
+}
+/*game*/
+#game{
+    text-align: center;
+    padding: 40px 0 150px;
+}
+#game button{
+    margin: 30px;
+    width: 100px;
+    height: 50px;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 25px;
+    background-color: #ED9B40;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+#game p{
+    margin: 30px 0 0;
+}
+#game button:hover{
+    transition: all 0.5s ease-in-out;
+    background-color: rgb(251, 193, 87)
+}
+/*team*/
+#team{
+    text-align: center;
+    margin-bottom: 80px;
+}
+#team h1{
+    margin-bottom: 70px;
+    font-weight: bolder;
+}
+.tarjetas{
+    margin: 20px 100px;
+    display: flex;
+    justify-content: center;
+}
+.card{
+    margin: 0 20px;
+    border-radius: 15px;
+    width: 430px;
+    height: 530px;
+    background-color:#D9D9D9 ;
+    padding: 20px;
+    font-size: 15px;
+}
+.card img{
+    height: 160px;
+    border-radius: 100px;
+    border: 2px solid white;
+    box-shadow: inset 0 0 5px rgb(0, 140, 255), 0 0 10px rgb(171, 226, 228);
+}
+.card h2{
+    margin: 5px;
+}
+.card p{
+    padding: 0px 40px;
+}
