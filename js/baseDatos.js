@@ -236,5 +236,20 @@ const glosary=[
     {word:"Outcome", explain:"Consequence of an action or process.", phonetic:"[ˈaʊt.kʌm]"},
     {word:"Output", explain:"Information or data produced by a system.", phonetic:"[ˈaʊt.pʊt]"},
     
-    
+    {word:"PaaS", explain:"Platform to develop, deploy, and manage applications.", phonetic:"[pɑːs]"},
+    {word:"Penetration Testing", explain:"Simulating cyber-attacks to identify vulnerabilities and weaknesses in a system.", phonetic:"[ ˌpenɪˈtreɪʃən ˈtes.tɪŋ]"},
+    {word:"Performance benchmark", explain:"Comparing the performance of different systems or software.", phonetic:"[pəˈfɔː.məns ˈbentʃ.mɑːk]"},
+    {word:"Performance Monitoring", explain:"Tracking and analyzing the performance of a system during its operation.", phonetic:"[pəˈfɔː.məns ˈmɒn.ɪ.tər]"},
+    {word:"Performance Optimization", explain:"Improving the efficiency and speed of a software application.", phonetic:"[pəˈfɔː.məns ˌɒp.tɪ.maɪˈzeɪ.ʃən]"},
+    {word:"Performance Test", explain:"Performance measurement under real load.", phonetic:"[pəˈfɔː.məns test]"},
+    {word:"Perl", explain:"Versatile language for web development and system administration.", phonetic:"[pɜːl]"},
+    {word:"PHP", explain:"Language for developing dynamic web applications.", phonetic:"There isn't much information about the British phonetic of the word \n we will continue searching for our users"},
+    {word:"Plugin", explain:"Module that adds functionalities to a program.", phonetic:"[ˈplʌɡ.ɪn]"},
+    {word:"Plugs", explain:"Connectors to connect devices.", phonetic:"[plʌɡs]"},
+    {word:"Port", explain:"Logical connection for communication between devices.", phonetic:"[pɔːt]"},
+    {word:"Predefined process", explain:"A set of steps established beforehand to guide a particular action or task.", phonetic:"[ˌpriː.dɪˈfaɪnd ˈprəʊ.ses]"},
+    {word:"Preparation", explain:"The act of getting ready for something, often involving gathering necessary materials and information.", phonetic:"[ˌprep.ərˈeɪ.ʃən]]"},
+    {word:"Printed document", explain:"A physical copy of a document with text and/or images, created using a printer.", phonetic:"[ˈprɪn.tɪd ˈdɒk.jə.mənt]"},
+    {word:"Printer", explain:"A device that produces printed documents from digital files.", phonetic:"[ˈprɪn.tər]"},
+    {word:"Privilege management", explain:"Controlling and assigning specific privileges or permissions to users.", phonetic:"[ˈprɪv.əl.ɪdʒ]"},
 ];
