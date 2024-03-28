@@ -101,7 +101,7 @@ header{
     display: block;
 }
 #informacion p{
-    margin: 10px 0px 30px;
+    margin: 10px 0px 10px;
     line-height: 30px;
     font-size: 20px;
 }
@@ -146,10 +146,20 @@ header{
 }
 /*game*/
 #game{
-    text-align: center;
-    padding: 40px 0 150px;
+    display: flex;
 }
-#game button{
+#game img{
+    width: 45%;
+    height: 100%;
+    padding: 0px 0px 0px 40px;
+    margin-bottom: 50px;
+}
+.content{
+    width: 50%;
+    text-align: center;
+    padding: 100px 100px 150px 0px;
+}
+.content button{
     margin: 30px;
     width: 100px;
     height: 50px;
@@ -161,12 +171,20 @@ header{
     border: none;
     border-radius: 10px;
 }
-#game p{
+.content h3{
     margin: 30px 0 0;
+    text-align: left;
+    font-size: 30px;
+    color: #ED9B40;
+    font-family: 'Protest Riot';
 }
-#game button:hover{
+.content p{
+    margin: 30px 0 0;
+    text-align: left;
+}
+.content button:hover{
     transition: all 0.5s ease-in-out;
-    background-color: rgb(251, 193, 87)
+    background-color: rgb(251, 193, 87);
 }
 /*team*/
 #team{
@@ -174,21 +192,21 @@ header{
     margin-bottom: 80px;
 }
 #team h1{
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     font-weight: bolder;
 }
 .tarjetas{
-    margin: 20px 100px;
+    margin: 0px 100px;
     display: flex;
     justify-content: center;
 }
 .card{
     margin: 0 20px;
     border-radius: 15px;
-    width: 430px;
-    height: 530px;
+    width: 380px;
+    height: 500px;
     background-color:#D9D9D9 ;
-    padding: 20px;
+    padding: 20px ;
     font-size: 15px;
 }
 .card img{
@@ -202,4 +220,41 @@ header{
 }
 .card p{
     padding: 0px 40px;
+}
+
+.light-box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: none;
+}
+.lb-active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .3s ease-in-out;
+}
+
+.light-box img{
+    width: 60vw;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#close{
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background-color: #ED9B40;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
 }

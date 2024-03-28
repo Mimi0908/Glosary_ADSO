@@ -251,6 +251,6 @@ const glosary=[
     { num:235, word:"Preparation", explain:"The act of getting ready for something, often involving gathering necessary materials and information.", phonetic:"[ˌprep.ərˈeɪ.ʃən]]"},
     { num:236, word:"Printed document", explain:"A physical copy of a document with text and/or images, created using a printer.", phonetic:"[ˈprɪn.tɪd ˈdɒk.jə.mənt]"},
     { num:237, word:"Printer", explain:"A device that produces printed documents from digital files.", phonetic:"[ˈprɪn.tər]"},
-    { num:238, word:"Privilege management", explain:"Controlling and assigning specific privileges or permissions to users.", phonetic:"[ˈprɪv.əl.ɪdʒ]"},
+    { num:238, word:"Privilege management", explain:"Controlling and assigning specific privileges or permissions to users.", phonetic:"[ˈprɪv.əl.ɪdʒ ˈmæn.ɪdʒ.mənt]"},
 ];
 export {glosary};

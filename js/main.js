@@ -27,5 +27,22 @@ cargarTarjeta(active);
 let audio= document.getElementById("audio");
 
 audio.onclick= function(){
+    responsiveVoice.speak(glosary[active].word, "UK English Male");
     document.getElementById("fonetica").className="fonetica-active";
+}
+
+let imagen= document.getElementById("imagen");
+let lightbox = document.getElementById("image");
+
+imagen.onclick = function () {
+    let lightboxImagen = document.getElementById('lightboxImagen');
+    lightboxImagen.src = `./img/glosario/${glosary[active].num}.jpg`;
+    lightbox.classList.add("lb-active");
+    document.body.style.overflow = 'hidden';
+}
+
+let close= document.getElementById("close");
+close.onclick= function(){
+    lightbox.classList.remove("lb-active");
+    document.body.style.overflow = 'auto';
 }
