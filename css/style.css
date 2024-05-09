@@ -258,3 +258,12 @@ header{
     height: 40px;
     line-height: 40px;
 }
+@media screen and (min-width:1600px){
+    .texto{
+        margin-left: 200px;
+    }
+    .content{
+        margin-top: 100px;
+        }
+
+}
