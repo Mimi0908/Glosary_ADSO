@@ -80,7 +80,7 @@ header{
 /*glosary*/
 #informacion{
     padding: 4% 15%;
-    background: rgb(171, 226, 228);
+    background: rgb(74, 149, 205);
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -213,7 +213,7 @@ header{
     height: 160px;
     border-radius: 100px;
     border: 2px solid white;
-    box-shadow: inset 0 0 5px rgb(0, 140, 255), 0 0 10px rgb(171, 226, 228);
+    box-shadow: inset 0 0 5px rgb(0, 140, 255), 0 0 10px rgb(74, 149, 205);
 }
 .card h2{
     margin: 5px;
