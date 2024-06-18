@@ -161,6 +161,11 @@ function comprobarRespuesta(opElegida) {
 function terminarJuego() {
     //ocultamos las pantallas y mostramos la pantalla final
 
+    document.getElementById("cronometro").hidden = true;
+    let tiempo = document.getElementById("tiempo");
+
+    tiempo.innerText = "You took " + minutos + " Minutes with " + segundos + " Seconds"  ;
+
     document.getElementById("pantalla-juego").style.display = "none";
     document.getElementById("pantalla-final").style.display = "block";
     //agreamos los resultados
@@ -175,6 +180,7 @@ function volverAlInicio() {
         preguntasActivas[index] = true;
     }
     reiniciarCronometro();
+    document.getElementById("cronometro").hidden = false;
     document.getElementById("pantalla-final").style.display = "none";
     document.getElementById("pantalla-inicial").style.display = "block";
     document.getElementById("pantalla-juego").style.display = "none";
