@@ -36,7 +36,7 @@ let lightbox = document.getElementById("image");
 
 imagen.onclick = function () {
     let lightboxImagen = document.getElementById('lightboxImagen');
-    lightboxImagen.src = `./img/glosario/${glosary[active].num}.jpg`;
+    lightboxImagen.src = `./img/glosario/${glosary[active].image}`;
     lightbox.classList.add("lb-active");
     document.body.style.overflow = 'hidden';
 }
