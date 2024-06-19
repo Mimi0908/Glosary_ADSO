@@ -1,20 +1,28 @@
+// Audio
+let audio = document.getElementById("miAudio");
+
+
 //cargo en un arreglo las imganes de las banderas. Este sera el orden que se mostrarán
 let fonetica = ["foot.png", "word.png", "hot.png", "cat.png", "sheep.png",
     "dance.png", "development.png", "code.png", "update.png", "firmware.png",
     "software.png", "try.png", "backend.png", "ship.png", "javascript.png",
-    "python.png", "chair.png", "virtual.png", "programmer.png", "inheritance.png"];// hay 20 posiciones
+    "python.png", "chair.png", "virtual.png", "programmer.png", "inheritance.png",
+    "adjustment.png","AI.png","API.png", ""];// hay X posiciones
 
 let preguntasActivas = [true, true, true, true, true,
     true, true, true, true, true,
     true, true, true, true, true,
-    true, true, true, true, true
+    true, true, true, true, true,
+    true,true,true
 ] //como será aleatorio, crearemos un array donde se guardará si esa posición ya ha salidoeeeeeeeeeeeeeeeeeeer  
 
 //arreglo que guardara la opcion correcta
-let correcta = [0, 1, 2, 1, 0
-    , 0, 2, 1, 2, 0
-    , 1, 0, 1, 2, 0
-    , 1, 2, 0, 2, 1]; // es un array de 20 posiciones
+let correcta = [
+    0, 1, 2, 1, 0,
+    0, 2, 1, 2, 0,
+    1, 0, 1, 2, 0,
+    1, 2, 0, 2, 1,
+    2, 1, 0, ]; // es un array de X posiciones
 
 //arreglo que guardara los paises a mostrar en cada jugada
 let opciones = [];
@@ -41,7 +49,25 @@ opciones.push(["ˌpaɪrəʊˈtɛknɪks", "ˈpaɪθᵊn", "pyrolysis"])
 opciones.push(["ʧeəz", "eə", "ʧeə"])
 opciones.push(["ˈvɜːʧuəl", "ˈvɜːʧuː", "juː"])
 opciones.push(["ˈprəʊɡræmɪŋ", "ˈprəʊɡræm", "ˈprəʊɡræmə"])
-opciones.push(["ɪnˈhɛrɪtᵊns ˈtæksɪz", "ɪnˈhɛrɪtᵊns", "ɪnˈhɛrɪtᵊns tæks"])// Es un array bidimensional de 20 posiciones
+opciones.push(["ɪnˈhɛrɪtᵊns ˈtæksɪz", "ɪnˈhɛrɪtᵊns", "ɪnˈhɛrɪtᵊns tæks"])
+
+opciones.push(["əˈdʒʌstmɛnt", "ædˈʒʌstmənt", "əˈdʒʌstmənt"])
+opciones.push(["æɪ ɪ", "eɪ aɪ", "aɪ æ"])
+opciones.push(["eɪ piː aɪ", "æp ɪ", "ə piː aɪ"])
+opciones.push(["", "", ""])
+opciones.push(["", "", ""])
+
+opciones.push(["", "", ""])
+opciones.push(["", "", ""])
+opciones.push(["", "", ""])
+opciones.push(["", "", ""])
+opciones.push(["", "", ""])
+
+opciones.push(["", "", ""])
+opciones.push(["", "", ""])
+opciones.push(["", "", ""])
+opciones.push(["", "", ""])
+opciones.push(["", "", ""])// Es un array bidimensional de X posiciones
 
 //variable que guarda la posicion actual
 let posActual = 0;
@@ -61,7 +87,8 @@ function comenzarJuego() {
     posActual = 0;
     cantidadAcertadas = 0;
     cantidad_No_Acertadas = 0;
-
+    
+    audio.play();
     
 
     //activamos las pantallas necesarias
@@ -160,6 +187,10 @@ function comprobarRespuesta(opElegida) {
 }
 function terminarJuego() {
     //ocultamos las pantallas y mostramos la pantalla final
+    //aqui 
+
+    audio.pause();
+    audio.currentTime = 0;
 
     document.getElementById("cronometro").hidden = true;
     let tiempo = document.getElementById("tiempo");
