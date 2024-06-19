@@ -8,7 +8,8 @@ let fonetica = ["foot.png", "word.png", "hot.png", "cat.png", "sheep.png",
     "software.png", "try.png", "backend.png", "ship.png", "javascript.png",
     "python.png", "chair.png", "virtual.png", "programmer.png", "inheritance.png",
     "adjustment.png", "AI.png", "API.png", "Breakpoint.png", "Bootstrap.png",
-    "Blockchain.png",    
+    "Blockchain.png", "captcha.png", "vegetables.png", "cluster.png", "Deployment.png",
+    "extract.png", "flutter.png", "headphones.png", "cow.png", "output.png"
 ];// hay X posiciones
 
 let preguntasActivas = [
@@ -17,7 +18,9 @@ let preguntasActivas = [
     true, true, true, true, true,
     true, true, true, true, true,
     true, true, true, true, true,
-    true,
+    true, true, true, true, true,
+    true, true, true, true, true
+
 ] //como será aleatorio, crearemos un array donde se guardará si esa posición ya ha salidoeeeeeeeeeeeeeeeeeeer  
 
 //arreglo que guardara la opcion correcta
@@ -27,7 +30,8 @@ let correcta = [
     1, 0, 1, 2, 0,
     1, 2, 0, 2, 1,
     2, 1, 0, 2, 1,
-    0, 
+    0, 1, 2, 0, 1,
+    2, 1, 0, 2, 1,
 ]; // es un array de X posiciones
 
 //arreglo que guardara los paises a mostrar en cada jugada
@@ -64,16 +68,16 @@ opciones.push(["ˈbraɪkpɔɪnt", "ˈbrɛkpɔɪnt", "ˈbreɪkpɔɪnt"])
 opciones.push(["ˈbʊtstræp", "ˈbuːtstræp", "ˈbʌtstræp"])
 
 opciones.push(["ˈblɒkˌtʃeɪn", "ˈblʌkˌtʃeɪn", "ˈblɑːkˌtʃeɪn"])
-opciones.push(["", "", ""])
-opciones.push(["", "", ""])
-opciones.push(["", "", ""])
-opciones.push(["", "", ""])
+opciones.push(["ˈkæptʃɑː", "ˈkæptʃə", "ˈkæpʃə"])
+opciones.push(["ˈvɛdʒəˌteɪbəlz", "ˈvɛdʒɪtəbəlz", "ˈvɛdʒtəbəlz"])
+opciones.push(["ˈklʌstər", "ˈklʊstər", "ˈklɑːstər"])
+opciones.push(["dɪˈplɔɪmɛnt", "dɪˈplɔɪmənt", "dəˈplɔɪmənt"])
 
-opciones.push(["", "", ""])
-opciones.push(["", "", ""])
-opciones.push(["", "", ""])
-opciones.push(["", "", ""])
-opciones.push(["", "", ""])// Es un array bidimensional de X posiciones
+opciones.push(["ˈɛkstrɪkt", "ˈɛkstrækt", "ɪkˈstrækt"])
+opciones.push(["ˈflʊtər", "ˈflʌtər", "ˈflɒtər"])
+opciones.push(["ˈhɛdfoʊnz", "ˈhɛdfoʊns", "ˈhɛdpfəʊnz"])
+opciones.push(["kæʊ", "kɔʊ", "kaʊ"])
+opciones.push(["ˈaʊtput", "ˈaʊtpʊt", "ˈoʊtpʊt"])// Es un array bidimensional de X posiciones
 
 //variable que guarda la posicion actual
 let posActual = 0;
@@ -85,7 +89,7 @@ let cantidadAcertadas = 0;
 let cantidad_No_Acertadas = 0;
 
 //valor aleatorio para obtener una pregunta
-let preguntaAleatoria = Math.floor(Math.random() * 25);
+let preguntaAleatoria = Math.floor(Math.random() * 29);
 
 function comenzarJuego() {
 
