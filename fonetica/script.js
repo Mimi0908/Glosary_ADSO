@@ -9,7 +9,9 @@ let fonetica = ["foot.png", "word.png", "hot.png", "cat.png", "sheep.png",
     "python.png", "chair.png", "virtual.png", "programmer.png", "inheritance.png",
     "adjustment.png", "AI.png", "API.png", "Breakpoint.png", "Bootstrap.png",
     "Blockchain.png", "captcha.png", "vegetables.png", "cluster.png", "Deployment.png",
-    "extract.png", "flutter.png", "headphones.png", "cow.png", "output.png"
+    "extract.png", "flutter.png", "headphones.png", "cow.png", "output.png",
+    "butterfly.png", "Program.png", 
+
 ];// hay X posiciones
 
 let preguntasActivas = [
@@ -19,7 +21,8 @@ let preguntasActivas = [
     true, true, true, true, true,
     true, true, true, true, true,
     true, true, true, true, true,
-    true, true, true, true, true
+    true, true, true, true, true,
+    true, true, 
 
 ] //como será aleatorio, crearemos un array donde se guardará si esa posición ya ha salidoeeeeeeeeeeeeeeeeeeer  
 
@@ -32,6 +35,7 @@ let correcta = [
     2, 1, 0, 2, 1,
     0, 1, 2, 0, 1,
     2, 1, 0, 2, 1,
+    0, 1
 ]; // es un array de X posiciones
 
 //arreglo que guardara los paises a mostrar en cada jugada
@@ -77,7 +81,14 @@ opciones.push(["ˈɛkstrɪkt", "ˈɛkstrækt", "ɪkˈstrækt"])
 opciones.push(["ˈflʊtər", "ˈflʌtər", "ˈflɒtər"])
 opciones.push(["ˈhɛdfoʊnz", "ˈhɛdfoʊns", "ˈhɛdpfəʊnz"])
 opciones.push(["kæʊ", "kɔʊ", "kaʊ"])
-opciones.push(["ˈaʊtput", "ˈaʊtpʊt", "ˈoʊtpʊt"])// Es un array bidimensional de X posiciones
+opciones.push(["ˈaʊtput", "ˈaʊtpʊt", "ˈoʊtpʊt"])
+
+opciones.push(["ˈbʌtərflaɪ", "ˈbʌtəˌfli", "ˈbʌtəflaɪ"])
+opciones.push(["", "ˈproʊɡræm", ""])
+opciones.push(["", "", ""])
+opciones.push(["", "", ""])
+opciones.push(["", "", ""])
+// Es un array bidimensional de X posiciones
 
 //variable que guarda la posicion actual
 let posActual = 0;
