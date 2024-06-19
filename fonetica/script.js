@@ -7,13 +7,17 @@ let fonetica = ["foot.png", "word.png", "hot.png", "cat.png", "sheep.png",
     "dance.png", "development.png", "code.png", "update.png", "firmware.png",
     "software.png", "try.png", "backend.png", "ship.png", "javascript.png",
     "python.png", "chair.png", "virtual.png", "programmer.png", "inheritance.png",
-    "adjustment.png","AI.png","API.png", ""];// hay X posiciones
+    "adjustment.png", "AI.png", "API.png", "Breakpoint.png", "Bootstrap.png",
+    "Blockchain.png",    
+];// hay X posiciones
 
-let preguntasActivas = [true, true, true, true, true,
+let preguntasActivas = [
     true, true, true, true, true,
     true, true, true, true, true,
     true, true, true, true, true,
-    true,true,true
+    true, true, true, true, true,
+    true, true, true, true, true,
+    true,
 ] //como será aleatorio, crearemos un array donde se guardará si esa posición ya ha salidoeeeeeeeeeeeeeeeeeeer  
 
 //arreglo que guardara la opcion correcta
@@ -22,7 +26,9 @@ let correcta = [
     0, 2, 1, 2, 0,
     1, 0, 1, 2, 0,
     1, 2, 0, 2, 1,
-    2, 1, 0, ]; // es un array de X posiciones
+    2, 1, 0, 2, 1,
+    0, 
+]; // es un array de X posiciones
 
 //arreglo que guardara los paises a mostrar en cada jugada
 let opciones = [];
@@ -54,10 +60,10 @@ opciones.push(["ɪnˈhɛrɪtᵊns ˈtæksɪz", "ɪnˈhɛrɪtᵊns", "ɪnˈhɛrɪ
 opciones.push(["əˈdʒʌstmɛnt", "ædˈʒʌstmənt", "əˈdʒʌstmənt"])
 opciones.push(["æɪ ɪ", "eɪ aɪ", "aɪ æ"])
 opciones.push(["eɪ piː aɪ", "æp ɪ", "ə piː aɪ"])
-opciones.push(["", "", ""])
-opciones.push(["", "", ""])
+opciones.push(["ˈbraɪkpɔɪnt", "ˈbrɛkpɔɪnt", "ˈbreɪkpɔɪnt"])
+opciones.push(["ˈbʊtstræp", "ˈbuːtstræp", "ˈbʌtstræp"])
 
-opciones.push(["", "", ""])
+opciones.push(["ˈblɒkˌtʃeɪn", "ˈblʌkˌtʃeɪn", "ˈblɑːkˌtʃeɪn"])
 opciones.push(["", "", ""])
 opciones.push(["", "", ""])
 opciones.push(["", "", ""])
@@ -79,7 +85,7 @@ let cantidadAcertadas = 0;
 let cantidad_No_Acertadas = 0;
 
 //valor aleatorio para obtener una pregunta
-let preguntaAleatoria = Math.floor(Math.random() * 20);
+let preguntaAleatoria = Math.floor(Math.random() * 25);
 
 function comenzarJuego() {
 
