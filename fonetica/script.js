@@ -201,7 +201,7 @@ function comprobarRespuesta(opElegida) {
     //Subimos en contador y volvemos a lanzar la pregunta aleatoria
     preguntasActivas[preguntaAleatoria] = false;
     posActual++;
-    preguntaAleatoria = Math.floor(Math.random() * 20);
+    preguntaAleatoria = Math.floor(Math.random() * 35);
 
     //Esperamos 1 segundo y pasamos mostrar la siguiente bandera y sus opciones
     setTimeout(cargarFonetica, 1000);
