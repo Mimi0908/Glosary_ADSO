@@ -150,7 +150,7 @@ function cargarFonetica() {
         else {
             //Se repetira hasta que la pregunta sea una que no haya salido
             while (preguntasActivas[preguntaAleatoria] == false) {
-                preguntaAleatoria = Math.floor(Math.random() * 20);
+                preguntaAleatoria = Math.floor(Math.random() * 35);
                 console.log("en el bucle, valor nuevo: " + preguntaAleatoria);
             }
 
