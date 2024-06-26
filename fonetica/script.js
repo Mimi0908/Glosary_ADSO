@@ -100,7 +100,7 @@ let cantidadAcertadas = 0;
 let cantidad_No_Acertadas = 0;
 
 //valor aleatorio para obtener una pregunta
-let preguntaAleatoria = Math.floor(Math.random() * 29);
+let preguntaAleatoria = Math.floor(Math.random() * 35);
 
 function comenzarJuego() {
 
