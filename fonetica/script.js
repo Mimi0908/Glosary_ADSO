@@ -1,7 +1,6 @@
 // Audio
 let audio = document.getElementById("miAudio");
 
-
 //cargo en un arreglo las imganes de las banderas. Este sera el orden que se mostrarán
 let fonetica = ["foot.png", "word.png", "hot.png", "cat.png", "sheep.png",
     "dance.png", "development.png", "code.png", "update.png", "firmware.png",
@@ -10,7 +9,8 @@ let fonetica = ["foot.png", "word.png", "hot.png", "cat.png", "sheep.png",
     "adjustment.png", "AI.png", "API.png", "Breakpoint.png", "Bootstrap.png",
     "Blockchain.png", "captcha.png", "vegetables.png", "cluster.png", "Deployment.png",
     "extract.png", "flutter.png", "headphones.png", "cow.png", "output.png",
-    "butterfly.png", "Program.png", 
+    "butterfly.png", "Program.png", "involve.png", "java.png", "webhook.png",
+    "something.png", "vite.png", "text-editor.png", "tester.png", "wild-side.png"
 
 ];// hay X posiciones
 
@@ -22,7 +22,8 @@ let preguntasActivas = [
     true, true, true, true, true,
     true, true, true, true, true,
     true, true, true, true, true,
-    true, true, 
+    true, true, true, true, true,
+    true, true, true, true, true
 
 ] //como será aleatorio, crearemos un array donde se guardará si esa posición ya ha salidoeeeeeeeeeeeeeeeeeeer  
 
@@ -35,7 +36,8 @@ let correcta = [
     2, 1, 0, 2, 1,
     0, 1, 2, 0, 1,
     2, 1, 0, 2, 1,
-    0, 1
+    0, 1, 2, 0, 1,
+    2, 1, 0, 2, 1
 ]; // es un array de X posiciones
 
 //arreglo que guardara los paises a mostrar en cada jugada
@@ -84,10 +86,16 @@ opciones.push(["kæʊ", "kɔʊ", "kaʊ"])
 opciones.push(["ˈaʊtput", "ˈaʊtpʊt", "ˈoʊtpʊt"])
 
 opciones.push(["ˈbʌtərflaɪ", "ˈbʌtəˌfli", "ˈbʌtəflaɪ"])
-opciones.push(["", "ˈproʊɡræm", ""])
-opciones.push(["", "", ""])
-opciones.push(["", "", ""])
-opciones.push(["", "", ""])
+opciones.push(["ˈproʊɡrəm", "ˈproʊɡræm", "ˈprəʊɡræm"])
+opciones.push(["ɪnˈvɔːlv", "ɪnˈvɑːlv", "ɪnˈvɒlv"])
+opciones.push(["ˈdʒɑːvə", "ˈdʒeɪvə", "ˈdʒævə"])
+opciones.push(["ˈwebhʊːk", "ˈwebhʊk", "ˈwɛbhʊk"])
+
+opciones.push(["ˈsʌmθæŋ", "ˈsʌmθiːŋ", "ˈsʌmθɪŋ"])
+opciones.push(["vɪt", "viːt", "vaɪt"])
+opciones.push(["ˈtɛkst ˈɛdɪtər", "ˈtɛkst ˈɛdɪtɔːr", "ˈtɛkst ˈiːdɪtər"])
+opciones.push(["ˈtɛstʊr", "ˈtɛstɜːr", "ˈtɛstər"])
+opciones.push(["wɪld saɪd", "waɪld saɪd", "waɪld sɪd"])
 // Es un array bidimensional de X posiciones
 
 //variable que guarda la posicion actual
@@ -150,7 +158,7 @@ function cargarFonetica() {
         else {
             //Se repetira hasta que la pregunta sea una que no haya salido
             while (preguntasActivas[preguntaAleatoria] == false) {
-                preguntaAleatoria = Math.floor(Math.random() * 20);
+                preguntaAleatoria = Math.floor(Math.random() * 45);
                 console.log("en el bucle, valor nuevo: " + preguntaAleatoria);
             }
 
